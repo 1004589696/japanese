@@ -10,10 +10,5 @@ export default new Router({
       name: "Index",
       component: () => import("@/pages/index")
     },
-    {
-      path: "/index",
-      name: "Index",
-      component: () => import("@/pages/index")
-    }
   ]
 });

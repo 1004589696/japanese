@@ -1,14 +1,25 @@
 <template>
-  <div class="index-page">12</div>
+  <div class="index-page">
+    <HeaderIndex />
+    <div class="block">
+      <p>
+        <span class="block-title">
+          <span>我们的优势</span>
+        </span>
+      </p>
+      <span class="block-title-eng">OUR ADVANTAGES</span>
+    </div>
+  </div>
 </template>
 
 <script>
+import HeaderIndex from "../components/header.vue";
 export default {
-  name: "HelloWorld",
+  components: {
+    HeaderIndex
+  },
   data() {
-    return {
-      msg: "Welcome to Your Vue.js App"
-    };
+    return {};
   }
 };
 </script>
