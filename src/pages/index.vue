@@ -135,6 +135,79 @@
           <p>教龄:8 年</p>
         </div>
       </div>
+      <div>
+        <div class="teachers-img">
+          <img src="../assets/images/image3.png" />
+        </div>
+        <div class="teachers-name">谢老师</div>
+        <div class="teachers-desc">
+          <p>高级讲师、留学顾问</p>
+          <p>教龄:6 年</p>
+        </div>
+      </div>
+      <div>
+        <div class="teachers-img">
+          <img src="../assets/images/image4.png" />
+        </div>
+        <div class="teachers-name">胡老师</div>
+        <div class="teachers-desc">
+          <p>日语基础讲师</p>
+          <p>教龄:2 年半</p>
+        </div>
+      </div>
+      <div>
+        <div class="teachers-img">
+          <img src="../assets/images/image5.png" />
+        </div>
+        <div class="teachers-name">贺老师</div>
+        <div class="teachers-desc">
+          <p>毕业于日本九州大学修士</p>
+          <p>高级口语老师</p>
+          <p>教龄:8 年</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <p>
+        <span class="block-title">
+          <span>我们的风采</span>
+        </span>
+      </p>
+      <span class="block-title-eng">OUR STYLE</span>
+    </div>
+    <div class="our-style">
+      <div class="style1">
+        <img src="../assets/images/c01.png" />
+        <img src="../assets/images/c02.png" />
+        <img src="../assets/images/c03.png" />
+        <img src="../assets/images/c04.png" />
+      </div>
+      <div class="style2">
+        <img src="../assets/images/c05.png" />
+        <img src="../assets/images/c06.png" />
+        <img src="../assets/images/c07.png" />
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div>
+        <div class="img-qr">
+          <img />
+          <p>微信咨询/报名</p>
+        </div>
+        <div class="txt">
+          <p>微信：sibide123</p>
+          <p>Q Q：501159350</p>
+          <p>邮箱：501159350@qq·com</p>
+          <p>地址：辽宁省大连市甘井子区玉情街34号</p>
+        </div>
+        <div class="btn">
+          <span>在线咨询电话</span>
+          <p>13898604692</p>
+          <p>18674399914</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -153,127 +226,220 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
-// @media screen and (min-width:600px) and (max-width:900px){
-//   body {background-color:#f5f5f5;}
-// }
 .index-page {
   background-color: #f4f7fc;
-  .our-advantages {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    & > div {
-      flex: 0 0 340px;
-      width: 340px;
-      background-color: #fff;
-      .advantages-img {
-        width: 120px;
-        margin: 40px auto 20px;
-        img {
-          width: 100%;
-          vertical-align: top;
-        }
-      }
-      .advantages-name {
-        font-size: 26px;
-        font-family: PingFangSC;
-        font-weight: bold;
-        color: rgba(51, 51, 51, 1);
-        text-align: center;
-      }
-      .advantages-desc {
-        padding: 30px 30px 50px 30px;
-        font-size: 16px;
-        line-height: 24px;
-        font-family: PingFangSC;
-        font-weight: 400;
-        color: rgba(102, 102, 102, 1);
-      }
-    }
-  }
-  .our-courses {
-    display: flex;
-    justify-content: space-between;
-    & > div {
-      background-color: #fff;
-      flex: 0 0 18.5%;
-      .courses-img {
-        padding: 5.63% 10.56%;
-        text-align: center;
-        img {
-          width: 100%;
-        }
-      }
-      .courses-name {
-        padding: 0 16.9%;
-        span {
-          position: relative;
-          span {
-            position: relative;
-            z-index: 2;
-            font-size: 32px;
+
+  @list: 1920px, 1680px, 1440px, 1366px, 1280px;
+
+  .loop(@arr, @index: 1, @value: extract(@arr, @index))
+    when(length(@arr)>=@index ) {
+    @media screen and (min-device-width: @value - 2px) and (max-device-width: @value + 2px) {
+      @px: @value / 1920;
+
+      .our-advantages {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        & > div {
+          flex: 0 0 340px;
+          width: 340px;
+          background-color: #fff;
+          .advantages-img {
+            width: 120px;
+            margin: 40px auto 20px;
+            img {
+              width: 100%;
+              vertical-align: top;
+            }
+          }
+          .advantages-name {
+            font-size: 26px;
             font-family: PingFangSC;
-            font-weight: 500;
-            color: rgba(65, 65, 65, 1);
+            font-weight: bold;
+            color: rgba(51, 51, 51, 1);
+            text-align: center;
+          }
+          .advantages-desc {
+            padding: 30px 30px 50px 30px;
+            font-size: 16px;
+            line-height: 28px;
+            font-family: PingFangSC;
+            font-weight: 400;
+            color: rgba(102, 102, 102, 1);
           }
         }
-        & > span::before {
-          content: "";
-          position: absolute;
-          z-index: 1;
-          bottom: 0;
-          left: 0;
-          width: calc(100% + 15px);
-          height: 14px;
-          background: rgba(255, 199, 70, 1);
-          opacity: 0.5;
-          border-radius: 7px;
+      }
+
+      .our-courses {
+        display: flex;
+        justify-content: space-between;
+        & > div {
+          background-color: #fff;
+          flex: 0 0 356 * @px;
+          .courses-img {
+            padding: 38 * @px;
+            text-align: center;
+            img {
+              width: 100%;
+            }
+          }
+          .courses-name {
+            padding-left: 60 * @px;
+            span {
+              position: relative;
+              span {
+                position: relative;
+                z-index: 2;
+                // font-size: 32px;
+                font-size: 32 * @px;
+                font-family: PingFangSC;
+                font-weight: 500;
+                color: rgba(65, 65, 65, 1);
+              }
+            }
+            & > span::before {
+              content: "";
+              position: absolute;
+              z-index: 1;
+              bottom: 0;
+              left: 0;
+              width: calc(100% + 15 * @px);
+              height: 14 * @px;
+              background: rgba(255, 199, 70, 1);
+              opacity: 0.5;
+              border-radius: 7px;
+            }
+          }
+          .courses-desc {
+            padding: 8.45% 16.9% 14.08% 16.9%;
+            font-size: 20 * @px;
+            font-family: PingFangSC;
+            font-weight: 400;
+            color: rgba(153, 153, 153, 1);
+            line-height: 38 * @px;
+          }
         }
       }
-      .courses-desc {
-        padding: 8.45% 16.9% 14.08% 16.9%;
-        font-size: 20px;
-        font-family: PingFangSC;
-        font-weight: 400;
-        color: rgba(153, 153, 153, 1);
-        line-height: 38px;
+
+      .our-teachers {
+        display: flex;
+        justify-content: space-between;
+        & > div {
+          flex: 0 0 350 * @px;
+          height: 500 * @px;
+          background-color: #fff;
+          .teachers-img {
+            width: 100%;
+            height: 328 * @px;
+            overflow: hidden;
+            img {
+              width: 100%;
+            }
+          }
+          .teachers-name {
+            text-align: center;
+            font-size: 34 * @px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            color: rgba(71, 71, 71, 1);
+            padding-top: 25 * @px;
+          }
+          .teachers-desc {
+            p {
+              text-align: center;
+              font-size: 20 * @px;
+              font-family: PingFangSC;
+              font-weight: 400;
+              color: rgba(102, 102, 102, 1);
+              line-height: 28 * @px;
+            }
+          }
+        }
+      }
+
+      .our-style {
+        & > div {
+          display: flex;
+          margin-bottom: 14 * @px;
+          justify-content: space-between;
+        }
+        .style1 {
+          img {
+            height: 419 * @px;
+          }
+        }
+        .style2 {
+          img {
+            height: 407 * @px;
+          }
+        }
+      }
+
+      .bottom {
+        margin-top: 257px;
+        height: 305px;
+        background: rgba(51, 51, 51, 1);
+        position: relative;
+        & > div {
+          position: absolute;
+          top: -150px;
+          left: 50%;
+          margin-left: -600px;
+          width: 1060px;
+          height: 230px;
+          background: rgba(255, 255, 255, 1);
+          display: flex;
+          padding: 70px 70px 0 70px;
+          .img-qr {
+            flex: 0 0 164px;
+          }
+          .txt {
+            flex: 1;
+            margin-left: 43px;
+            font-size: 18px;
+            font-family: PingFangSC;
+            font-weight: 500;
+            color: rgba(51, 51, 51, 1);
+            line-height: 30px;
+          }
+          .btn {
+            flex: 0 0 200px;
+            text-align: right;
+            span {
+              display: inline-block;
+              width: 174px;
+              height: 43px;
+              background: linear-gradient(
+                91deg,
+                rgba(0, 138, 255, 1),
+                rgba(0, 204, 255, 1)
+              );
+              border-radius: 6px;
+              font-size: 20px;
+              font-family: PingFangSC;
+              font-weight: 400;
+              color: rgba(255, 255, 255, 1);
+              line-height: 43px;
+              text-align: center;
+            }
+            p {
+              width: 200px;
+              font-size: 30px;
+              font-family: PingFangSC;
+              font-weight: 600;
+              color: rgba(51, 51, 51, 1);
+              line-height: 36px;
+              margin-right: 0;
+              text-align: justify;
+            }
+          }
+        }
       }
     }
+    .loop(@list, (@index+1));
   }
 
-  .our-teachers {
-    display: flex;
-    justify-content: space-between;
-    & > div {
-      flex: 0 0 350px;
-      .teachers-img {
-        width: 100%;
-        height: 328px;
-        overflow: hidden;
-        img {
-          width: 100%;
-        }
-      }
-      .teachers-name {
-        text-align: center;
-        font-size: 34px;
-        font-family: Microsoft YaHei;
-        font-weight: 400;
-        color: rgba(71, 71, 71, 1);
-        line-height: 48px;
-      }
-      .teachers-desc {
-        p {
-          text-align: center;
-          font-size: 20px;
-          font-family: PingFangSC;
-          font-weight: 400;
-          color: rgba(102, 102, 102, 1);
-          line-height: 29px;
-        }
-      }
-    }
-  }
+  .loop(@list);
 }
 </style>
