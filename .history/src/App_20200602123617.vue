@@ -17,7 +17,6 @@ export default {
 .block {
   text-align: center;
   padding-top: 59px;
-  padding-bottom: 40px;
   .block-title {
     font-size: 40px;
     font-family: PingFangSC;

@@ -263,16 +263,6 @@ export default {
         color: rgba(71, 71, 71, 1);
         line-height: 48px;
       }
-      .teachers-desc {
-        p {
-          text-align: center;
-          font-size: 20px;
-          font-family: PingFangSC;
-          font-weight: 400;
-          color: rgba(102, 102, 102, 1);
-          line-height: 29px;
-        }
-      }
     }
   }
 }

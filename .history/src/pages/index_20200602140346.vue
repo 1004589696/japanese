@@ -108,34 +108,6 @@
         <div class="courses-desc">独创的口语教学体系，基础学习与口语学习同步。场景会话演练，让学生克服哑巴日语。</div>
       </div>
     </div>
-
-    <div class="block">
-      <p>
-        <span class="block-title">
-          <span>我们的师资</span>
-        </span>
-      </p>
-      <span class="block-title-eng">OUR TEACHERS</span>
-    </div>
-
-    <div class="our-teachers">
-      <div>
-        <div class="teachers-img">
-          <img src="../assets/images/image1.png" />
-        </div>
-        <div class="teachers-name">浦田美玲</div>
-      </div>
-      <div>
-        <div class="teachers-img">
-          <img src="../assets/images/image2.png" />
-        </div>
-        <div class="teachers-name">赵老师</div>
-        <div class="teachers-desc">
-          <p>考级讲师</p>
-          <p>教龄:8 年</p>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -153,9 +125,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
-// @media screen and (min-width:600px) and (max-width:900px){
-//   body {background-color:#f5f5f5;}
-// }
 .index-page {
   background-color: #f4f7fc;
   .our-advantages {
@@ -224,7 +193,7 @@ export default {
           z-index: 1;
           bottom: 0;
           left: 0;
-          width: calc(100% + 15px);
+          width: 110%;
           height: 14px;
           background: rgba(255, 199, 70, 1);
           opacity: 0.5;
@@ -238,40 +207,6 @@ export default {
         font-weight: 400;
         color: rgba(153, 153, 153, 1);
         line-height: 38px;
-      }
-    }
-  }
-
-  .our-teachers {
-    display: flex;
-    justify-content: space-between;
-    & > div {
-      flex: 0 0 350px;
-      .teachers-img {
-        width: 100%;
-        height: 328px;
-        overflow: hidden;
-        img {
-          width: 100%;
-        }
-      }
-      .teachers-name {
-        text-align: center;
-        font-size: 34px;
-        font-family: Microsoft YaHei;
-        font-weight: 400;
-        color: rgba(71, 71, 71, 1);
-        line-height: 48px;
-      }
-      .teachers-desc {
-        p {
-          text-align: center;
-          font-size: 20px;
-          font-family: PingFangSC;
-          font-weight: 400;
-          color: rgba(102, 102, 102, 1);
-          line-height: 29px;
-        }
       }
     }
   }

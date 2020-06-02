@@ -265,7 +265,6 @@ export default {
       }
       .teachers-desc {
         p {
-          text-align: center;
           font-size: 20px;
           font-family: PingFangSC;
           font-weight: 400;

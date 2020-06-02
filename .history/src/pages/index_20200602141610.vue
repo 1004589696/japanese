@@ -131,8 +131,8 @@
         </div>
         <div class="teachers-name">赵老师</div>
         <div class="teachers-desc">
-          <p>考级讲师</p>
-          <p>教龄:8 年</p>
+          <p></p>
+          <p></p>
         </div>
       </div>
     </div>
@@ -242,38 +242,5 @@ export default {
     }
   }
 
-  .our-teachers {
-    display: flex;
-    justify-content: space-between;
-    & > div {
-      flex: 0 0 350px;
-      .teachers-img {
-        width: 100%;
-        height: 328px;
-        overflow: hidden;
-        img {
-          width: 100%;
-        }
-      }
-      .teachers-name {
-        text-align: center;
-        font-size: 34px;
-        font-family: Microsoft YaHei;
-        font-weight: 400;
-        color: rgba(71, 71, 71, 1);
-        line-height: 48px;
-      }
-      .teachers-desc {
-        p {
-          text-align: center;
-          font-size: 20px;
-          font-family: PingFangSC;
-          font-weight: 400;
-          color: rgba(102, 102, 102, 1);
-          line-height: 29px;
-        }
-      }
-    }
-  }
 }
 </style>

@@ -61,78 +61,10 @@
             <span>日语考研</span>
           </span>
         </div>
-        <div class="courses-desc">突破传统的填鸭式教育，为内部学员提供 实用应试技巧，助学员高分升学。</div>
-      </div>
-      <div>
-        <div class="courses-img">
-          <img src="../assets/images/p05.png" />
-        </div>
-        <div class="courses-name">
-          <span>
-            <span>日语考级</span>
-          </span>
-        </div>
-        <div class="courses-desc">课程设置具有阶梯螺旋上升的难度递进。针对不同考级要求与内容， 精心研发考点与强化课程。</div>
-      </div>
-      <div>
-        <div class="courses-img">
-          <img src="../assets/images/p06.png" />
-        </div>
-        <div class="courses-name">
-          <span>
-            <span>日语留学游学</span>
-          </span>
-        </div>
-        <div class="courses-desc">优质的服务，一对一私人订制留学计划。体验日本不同的风土人情。深入感受日本文化。</div>
-      </div>
-      <div>
-        <div class="courses-img">
-          <img src="../assets/images/p07.png" />
-        </div>
-        <div class="courses-name">
-          <span>
-            <span>日语高考</span>
-          </span>
-        </div>
-        <div class="courses-desc">因材施教，讲究引导式学习方式。关注每个同学的学习情况及状态。</div>
-      </div>
-      <div>
-        <div class="courses-img">
-          <img src="../assets/images/p08.png" />
-        </div>
-        <div class="courses-name">
-          <span>
-            <span>日语口语</span>
-          </span>
-        </div>
-        <div class="courses-desc">独创的口语教学体系，基础学习与口语学习同步。场景会话演练，让学生克服哑巴日语。</div>
-      </div>
-    </div>
-
-    <div class="block">
-      <p>
-        <span class="block-title">
-          <span>我们的师资</span>
-        </span>
-      </p>
-      <span class="block-title-eng">OUR TEACHERS</span>
-    </div>
-
-    <div class="our-teachers">
-      <div>
-        <div class="teachers-img">
-          <img src="../assets/images/image1.png" />
-        </div>
-        <div class="teachers-name">浦田美玲</div>
-      </div>
-      <div>
-        <div class="teachers-img">
-          <img src="../assets/images/image2.png" />
-        </div>
-        <div class="teachers-name">赵老师</div>
-        <div class="teachers-desc">
-          <p>考级讲师</p>
-          <p>教龄:8 年</p>
+        <div class="courses-desc">
+          <p>1:经验丰富、从教多年的骨干教师。</p>
+          <p>2:对每位学员具有责任心和耐心。秉持着 让我们的每位学员都有所收获。</p>
+          <p>3:教学点位置离大学很近，可以保证每个学员每天只要利 用一点课余时间，就能来学习。</p>
         </div>
       </div>
     </div>
@@ -153,9 +85,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
-// @media screen and (min-width:600px) and (max-width:900px){
-//   body {background-color:#f5f5f5;}
-// }
 .index-page {
   background-color: #f4f7fc;
   .our-advantages {
@@ -196,17 +125,15 @@ export default {
     display: flex;
     justify-content: space-between;
     & > div {
-      background-color: #fff;
-      flex: 0 0 18.5%;
+      flex: 0 0 19%;
       .courses-img {
-        padding: 5.63% 10.56%;
         text-align: center;
         img {
           width: 100%;
         }
       }
       .courses-name {
-        padding: 0 16.9%;
+        text-align: center;
         span {
           position: relative;
           span {
@@ -222,55 +149,13 @@ export default {
           content: "";
           position: absolute;
           z-index: 1;
-          bottom: 0;
+          bottom: 7px;
           left: 0;
-          width: calc(100% + 15px);
+          width: 200px;
           height: 14px;
           background: rgba(255, 199, 70, 1);
           opacity: 0.5;
           border-radius: 7px;
-        }
-      }
-      .courses-desc {
-        padding: 8.45% 16.9% 14.08% 16.9%;
-        font-size: 20px;
-        font-family: PingFangSC;
-        font-weight: 400;
-        color: rgba(153, 153, 153, 1);
-        line-height: 38px;
-      }
-    }
-  }
-
-  .our-teachers {
-    display: flex;
-    justify-content: space-between;
-    & > div {
-      flex: 0 0 350px;
-      .teachers-img {
-        width: 100%;
-        height: 328px;
-        overflow: hidden;
-        img {
-          width: 100%;
-        }
-      }
-      .teachers-name {
-        text-align: center;
-        font-size: 34px;
-        font-family: Microsoft YaHei;
-        font-weight: 400;
-        color: rgba(71, 71, 71, 1);
-        line-height: 48px;
-      }
-      .teachers-desc {
-        p {
-          text-align: center;
-          font-size: 20px;
-          font-family: PingFangSC;
-          font-weight: 400;
-          color: rgba(102, 102, 102, 1);
-          line-height: 29px;
         }
       }
     }
