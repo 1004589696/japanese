@@ -7,8 +7,13 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "Index",
-      component: () => import("@/pages/index")
+      name: "index",
+      component: () => import("@/pages/index.vue")
+    },
+    {
+      path: "/dynamic",
+      name: "dynamic",
+      component: () => import("@/pages/dynamic.vue")
     },
   ]
 });

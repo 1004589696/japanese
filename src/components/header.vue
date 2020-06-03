@@ -1,7 +1,11 @@
 <template>
   <div :class="isBlue?'header-box blue':'header-box'">
     <div>
-      <div class="logo"></div>
+      <div class="logo">
+        <img class="logo-img" src="../assets/images/logo.png" />
+        <img v-if="isBlue" class="logo-txt" src="../assets/images/logotxt01.png" />
+        <img v-else class="logo-txt" src="../assets/images/logotxt02.png" />
+      </div>
       <div class="menu">
         <span>首页</span>
         <span>日语课程</span>
@@ -27,15 +31,27 @@ export default {
 <style scoped lang="less">
 .header-box {
   height: 80px;
-  background: #f4f7fc;
+  background: #fff;
   & > div {
     max-width: 1200px;
     margin: 0 auto;
     .logo {
       float: left;
-      height: 80px;
-      width: 240px;
-      background-color: red;
+      padding: 10px 0;
+      width: 239px;
+      position: relative;
+      font-size: 0;
+      img {
+        vertical-align: top;
+      }
+      .logo-img {
+        width: 60px;
+        height: 60px;
+      }
+      .logo-txt {
+        width: 178px;
+        height: 60px;
+      }
     }
     .menu {
       margin-left: 240px;

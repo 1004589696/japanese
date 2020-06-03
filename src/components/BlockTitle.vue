@@ -2,10 +2,10 @@
   <div class="block">
     <p>
       <span class="block-title">
-        <span>我们的课程</span>
+        <span>{{ch}}</span>
       </span>
     </p>
-    <span class="block-title-eng">OUR COURSES</span>
+    <span class="block-title-eng">{{eng}}</span>
   </div>
 </template>
 
