@@ -1,14 +1,15 @@
 <template>
   <div class="index-page">
     <HeaderIndex />
-    <div class="block">
-      <p>
-        <span class="block-title">
-          <span>我们的优势</span>
-        </span>
-      </p>
-      <span class="block-title-eng">OUR ADVANTAGES</span>
+
+    <div class="top-img">
+      <div>
+        <img src="../assets/images/bg05.png" />
+      </div>
     </div>
+
+    <BlockTitle ch="我们的优势" eng="OUR ADVANTAGES" />
+
     <div class="our-advantages">
       <div>
         <div class="advantages-img">
@@ -43,14 +44,9 @@
         </div>
       </div>
     </div>
-    <div class="block">
-      <p>
-        <span class="block-title">
-          <span>我们的课程</span>
-        </span>
-      </p>
-      <span class="block-title-eng">OUR COURSES</span>
-    </div>
+
+    <BlockTitle ch="我们的课程" eng="OUR COURSES" />
+
     <div class="our-courses">
       <div>
         <div class="courses-img">
@@ -109,14 +105,7 @@
       </div>
     </div>
 
-    <div class="block">
-      <p>
-        <span class="block-title">
-          <span>我们的师资</span>
-        </span>
-      </p>
-      <span class="block-title-eng">OUR TEACHERS</span>
-    </div>
+    <BlockTitle ch="我们的师资" eng="OUR TEACHERS" />
 
     <div class="our-teachers">
       <div>
@@ -168,14 +157,8 @@
       </div>
     </div>
 
-    <div class="block">
-      <p>
-        <span class="block-title">
-          <span>我们的风采</span>
-        </span>
-      </p>
-      <span class="block-title-eng">OUR STYLE</span>
-    </div>
+    <BlockTitle ch="我们的风采" eng="OUR STYLE" />
+
     <div class="our-style">
       <div class="style1">
         <img src="../assets/images/c01.png" />
@@ -193,7 +176,7 @@
     <div class="bottom">
       <div>
         <div class="img-qr">
-          <img />
+          <img src="../assets/images/qr01.png" />
           <p>微信咨询/报名</p>
         </div>
         <div class="txt">
@@ -208,15 +191,18 @@
           <p>18674399914</p>
         </div>
       </div>
+      <p>备案号：4s412dsf1asdfa1sdfa12dsf</p>
     </div>
   </div>
 </template>
 
 <script>
 import HeaderIndex from "../components/header.vue";
+import BlockTitle from "../components/BlockTitle.vue";
 export default {
   components: {
-    HeaderIndex
+    HeaderIndex,
+    BlockTitle
   },
   data() {
     return {};
@@ -233,8 +219,23 @@ export default {
 
   .loop(@arr, @index: 1, @value: extract(@arr, @index))
     when(length(@arr)>=@index ) {
-    @media screen and (min-device-width: @value - 2px) and (max-device-width: @value + 2px) {
+    @media screen and (min-device-width: @value - 20px) and (max-device-width: @value + 20px) {
       @px: @value / 1920;
+
+      .top-img {
+        width: 100%;
+        height: 890 * @px;
+        background: url("../assets/images/bg01.png") no-repeat top center;
+        background-size: 100%;
+        div {
+          padding-top: 110 * @px;
+          margin: 0 auto;
+          width: 1200px;
+          img {
+            width: 601 * @px;
+          }
+        }
+      }
 
       .our-advantages {
         display: flex;
@@ -371,7 +372,7 @@ export default {
         }
         .style2 {
           img {
-            height: 407 * @px;
+            height: 404 * @px;
           }
         }
       }
@@ -387,12 +388,24 @@ export default {
           left: 50%;
           margin-left: -600px;
           width: 1060px;
-          height: 230px;
+          height: 300px;
           background: rgba(255, 255, 255, 1);
           display: flex;
-          padding: 70px 70px 0 70px;
+          align-items: center;
+          padding: 0 70px;
           .img-qr {
             flex: 0 0 164px;
+            img {
+              width: 164px;
+              height: 164px;
+            }
+            p {
+              text-align: center;
+              font-size: 16px;
+              font-family: PingFangSC;
+              font-weight: 400;
+              color: rgba(153, 153, 153, 1);
+            }
           }
           .txt {
             flex: 1;
@@ -422,6 +435,7 @@ export default {
               color: rgba(255, 255, 255, 1);
               line-height: 43px;
               text-align: center;
+              margin-bottom: 5px;
             }
             p {
               width: 200px;
@@ -434,6 +448,19 @@ export default {
               text-align: justify;
             }
           }
+        }
+        & > p {
+          position: absolute;
+          bottom: 40px;
+          left: 0;
+          width: 100%;
+          height: 30px;
+          font-size: 18px;
+          font-family: PingFangSC;
+          font-weight: 500;
+          color: rgba(255, 255, 255, 1);
+          line-height: 30px;
+          text-align: center;
         }
       }
     }
