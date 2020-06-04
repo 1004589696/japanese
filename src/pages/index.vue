@@ -1,15 +1,12 @@
 <template>
   <div class="index-page">
     <HeaderIndex />
-
     <div class="top-img">
       <div>
         <img src="../assets/images/bg05.png" />
       </div>
     </div>
-
     <BlockTitle ch="我们的优势" eng="OUR ADVANTAGES" />
-
     <div class="our-advantages">
       <div>
         <div class="advantages-img">

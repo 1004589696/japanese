@@ -47,6 +47,7 @@ exports.cssLoaders = function (options) {
     if (options.extract) {
       return ExtractTextPlugin.extract({
         use: loaders,
+        publicPath:'../../', //dck 修改 2020.6.4
         fallback: 'vue-style-loader'
       })
     } else {

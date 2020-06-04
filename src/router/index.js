@@ -11,9 +11,19 @@ export default new Router({
       component: () => import("@/pages/index.vue")
     },
     {
-      path: "/dynamic",
-      name: "dynamic",
-      component: () => import("@/pages/dynamic.vue")
+      path: "/dynamicshare",
+      name: "dynamicshare",
+      component: () => import("@/pages/dynamicshare.vue")
     },
+    {
+      path: "/studyingabroad",
+      name: "studyingabroad",
+      component: () => import("@/pages/studyingabroad.vue")
+    },
+    {
+      path: "/aboutsuccess",
+      name: "aboutsuccess",
+      component: () => import("@/pages/aboutsuccess.vue")
+    }
   ]
 });

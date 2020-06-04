@@ -7,12 +7,12 @@
         <img v-else class="logo-txt" src="../assets/images/logotxt02.png" />
       </div>
       <div class="menu">
-        <span>首页</span>
-        <span>日语课程</span>
-        <span>留学游学</span>
-        <span>关于我们</span>
-        <span>学院佳绩</span>
-        <span>动态分享</span>
+        <span
+          v-for="item in list"
+          :key="item.name"
+          :class="{active:item.path==path}"
+          @click="todo(item.path)"
+        >{{item.name}}</span>
       </div>
     </div>
   </div>
@@ -22,7 +22,37 @@
 export default {
   props: ["isBlue"],
   data() {
-    return {};
+    return {
+      path: "",
+      list: [
+        {
+          path: "/",
+          name: "首页"
+        },
+        {
+          path: "/studyingabroad",
+          name: "留学游学"
+        },
+        {
+          path: "/aboutsuccess",
+          name: "关于佳绩"
+        },
+        {
+          path: "/dynamicshare",
+          name: "动态分享"
+        }
+      ]
+    };
+  },
+  created() {
+    this.path = this.$route.path;
+  },
+  methods: {
+    todo(rou) {
+      if (rou != this.path) {
+        this.$router.push(rou);
+      }
+    }
   }
 };
 </script>
@@ -64,7 +94,8 @@ export default {
         font-weight: 400;
         color: rgba(51, 51, 51, 1);
         line-height: 50px;
-        margin-right: 60px;
+        margin-right: 20px;
+        padding: 0 20px;
         cursor: pointer;
       }
     }
