@@ -1,11 +1,8 @@
 <template>
-  <div class="block">
-    <p>
-      <span class="block-title">
-        <span>{{ch}}</span>
-      </span>
-    </p>
-    <span class="block-title-eng">{{eng}}</span>
+  <div class="page-content-title">
+    <span>
+      <span>{{ch}}</span>
+    </span>
   </div>
 </template>
 
@@ -27,11 +24,10 @@ export default {
   @media screen and (min-device-width: @value - 20px) and (max-device-width: @value + 20px) {
     @px: @value / 1920;
 
-    .block {
+    .page-content-title {
       text-align: center;
-      padding-top: 59 * @px;
-      padding-bottom: 40 * @px;
-      .block-title {
+      font-size: 0;
+      & > span {
         font-size: 40 * @px;
         font-family: PingFangSC;
         font-weight: 600;
@@ -42,7 +38,7 @@ export default {
           z-index: 2;
         }
       }
-      .block-title::before {
+      & > span::before {
         content: "";
         position: absolute;
         z-index: 1;
@@ -56,14 +52,6 @@ export default {
           rgba(0, 138, 255, 1),
           rgba(0, 204, 255, 1)
         );
-      }
-      .block-title-eng {
-        font-size: 16 * @px;
-        font-family: PingFangSC;
-        font-weight: 300;
-        color: rgba(102, 102, 102, 1);
-        line-height: 30 * @px;
-        opacity: 0.5;
       }
     }
   }

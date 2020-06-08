@@ -7,23 +7,23 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "index",
       component: () => import("@/pages/index.vue")
     },
     {
-      path: "/dynamicshare",
-      name: "dynamicshare",
-      component: () => import("@/pages/dynamicshare.vue")
+      path: "/course",
+      component: () => import("@/pages/course.vue")
     },
     {
-      path: "/studyingabroad",
-      name: "studyingabroad",
-      component: () => import("@/pages/studyingabroad.vue")
+      path: "/studyabroad",
+      component: () => import("@/pages/studyabroad.vue")
     },
     {
-      path: "/aboutsuccess",
-      name: "aboutsuccess",
-      component: () => import("@/pages/aboutsuccess.vue")
+      path: "/dynamicsharing",
+      component: () => import("@/pages/dynamicsharing.vue")
+    },
+    {
+      path: "/aboutus",
+      component: () => import("@/pages/aboutus.vue")
     }
   ]
 });
