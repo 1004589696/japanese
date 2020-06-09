@@ -1,11 +1,10 @@
 <template>
   <div class="course-page">
-    <Top :isBlue="true" />
     <div class="top-image">
       <img src="../assets/imgs/course01.png" />
     </div>
 
-    <div class="title-image">
+    <div class="title-image" id="course02">
       <img src="../assets/imgs/course02.png" />
     </div>
 
@@ -34,7 +33,7 @@
       </div>
     </div>
 
-    <div class="title-image">
+    <div class="title-image" id="course03">
       <img src="../assets/imgs/course03.png" />
     </div>
 
@@ -115,7 +114,7 @@
       </div>
     </div>
 
-    <div class="title-image">
+    <div class="title-image" id="course04">
       <img src="../assets/imgs/course04.png" />
     </div>
 
@@ -145,7 +144,7 @@
       </div>
     </div>
 
-    <div class="title-image">
+    <div class="title-image" id="course05">
       <img src="../assets/imgs/course05.png" />
     </div>
 
@@ -175,13 +174,30 @@
 </template>
 
 <script>
-import Top from "../components/Top.vue";
+import $ from "jquery";
 export default {
-  components: {
-    Top
-  },
   data() {
-    return {};
+    return {
+      type: 0
+    };
+  },
+  created() {
+    if (this.$route.query.type) {
+      let type = this.$route.query.type;
+      let oldQuery = this.$router.currentRoute.query;
+      this.$router.replace({
+        query: {}
+      });
+      this.$nextTick(() => {
+        this.scroll("#" + type);
+      });
+    }
+  },
+  methods: {
+    scroll(id) {
+      let num = $(id).offset().top;
+      $("html,body").animate({ scrollTop: num }, 100);
+    }
   }
 };
 </script>

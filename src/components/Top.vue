@@ -1,29 +1,41 @@
 <template>
-  <div :class="isBlue?'header-box blue':'header-box'">
-    <div>
-      <div class="logo">
-        <img class="logo-img" src="../assets/imgs/logo.png" />
-        <img v-if="isBlue" class="logo-txt" src="../assets/imgs/logotxt01.png" />
-        <img v-else class="logo-txt" src="../assets/imgs/logotxt02.png" />
-      </div>
-      <div class="menu">
-        <span
-          v-for="item in list"
-          :key="item.name"
-          :class="{active:item.path==path}"
-          @click="todo(item.path)"
-        >{{item.name}}</span>
+  <div>
+    <div :class="isBlue?'header-box blue':'header-box'">
+      <div>
+        <div class="logo">
+          <img class="logo-img" src="../assets/imgs/logo.png" />
+          <img v-if="isBlue" class="logo-txt" src="../assets/imgs/logotxt01.png" />
+          <img v-else class="logo-txt" src="../assets/imgs/logotxt02.png" />
+        </div>
+        <div class="menu">
+          <span
+            v-for="item in list"
+            :key="item.name"
+            :class="{active:item.path==path,iskech:item.path=='/course'}"
+            @click="changePath(item.path)"
+          >
+            {{item.name}}
+            <div class="hover" v-if="item.path=='/course'">
+              <div @click="todo('course02')">日语入门兴趣课程</div>
+              <div @click="todo('course03')">日语考级、考研课程</div>
+              <div @click="todo('course04')">日语高考课程</div>
+              <div @click="todo('course05')">日语口语课程</div>
+            </div>
+          </span>
+        </div>
       </div>
     </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import $ from "jquery";
 export default {
-  props: ["isBlue"],
   data() {
     return {
       path: "",
+      isBlue: false,
       list: [
         {
           path: "/",
@@ -51,11 +63,32 @@ export default {
   created() {
     this.path = this.$route.path;
   },
-  methods: {
-    todo(rou) {
-      if (rou != this.path) {
-        this.$router.push(rou);
+  watch: {
+    $route() {
+      this.path = this.$route.path;
+      if (this.path != "/") {
+        this.isBlue = true;
+      } else {
+        this.isBlue = false;
       }
+    }
+  },
+  methods: {
+    changePath(path) {
+      if (path != this.$route.path && path != "/course") {
+        this.$router.push(path);
+      }
+    },
+    todo(id) {
+      if (this.$route.path == "/course") {
+        this.scroll("#" + id);
+      } else {
+        this.$router.push("/course?type=" + id);
+      }
+    },
+    scroll(id) {
+      let num = $(id).offset().top;
+      $("html,body").animate({ scrollTop: num }, 100);
     }
   }
 };
@@ -101,6 +134,31 @@ export default {
         margin-right: 20px;
         padding: 0 20px;
         cursor: pointer;
+        position: relative;
+      }
+      .hover {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: -30px;
+        width: 200px;
+        height: 243px;
+        padding-top: 30px;
+        div {
+          font-size: 14px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: rgba(21, 21, 21, 1);
+          text-align: center;
+          line-height: 60px;
+          border-bottom: 1px solid rgba(225, 225, 225, 0.5);
+          background-color: #fff;
+        }
+      }
+      .iskech:hover {
+        .hover {
+          display: block;
+        }
       }
     }
   }

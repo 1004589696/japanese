@@ -1,6 +1,5 @@
 <template>
   <div class="aboutus-page">
-    <Top :isBlue="true" />
     <div class="studyabroad-top-img">
       <img src="../assets/imgs/aboutus01.png" />
     </div>
@@ -138,12 +137,10 @@
 </template>
 
 <script>
-import Top from "../components/Top.vue";
 import Bottom from "../components/Bottom.vue";
 import BlockTitle from "../components/BlockTitle.vue";
 export default {
   components: {
-    Top,
     Bottom,
     BlockTitle
   },

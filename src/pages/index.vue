@@ -1,7 +1,5 @@
 <template>
   <div class="index-page">
-    <Top />
-
     <div class="studyabroad-top-img">
       <img src="../assets/imgs/index01.png" />
     </div>
@@ -103,12 +101,10 @@
 </template>
 
 <script>
-import Top from "../components/Top.vue";
 import Bottom from "../components/Bottom.vue";
 import BlockTitle from "../components/BlockTitle.vue";
 export default {
   components: {
-    Top,
     Bottom,
     BlockTitle
   },
