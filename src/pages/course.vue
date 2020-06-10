@@ -1,11 +1,12 @@
 <template>
   <div class="course-page">
     <div class="top-image">
-      <img src="../assets/imgs/course01.png" />
+      <img src="../assets/png8/course01.png" />
     </div>
 
     <div class="title-image" id="course02">
-      <img src="../assets/imgs/course02.png" />
+      <img src="../assets/png8/course02.png" />
+      <span>日语入门兴趣课程</span>
     </div>
 
     <div class="title-content">
@@ -34,7 +35,8 @@
     </div>
 
     <div class="title-image" id="course03">
-      <img src="../assets/imgs/course03.png" />
+      <img src="../assets/png8/course02.png" />
+      <span>日语考级、考研课程</span>
     </div>
 
     <div class="title-content">
@@ -115,7 +117,8 @@
     </div>
 
     <div class="title-image" id="course04">
-      <img src="../assets/imgs/course04.png" />
+      <img src="../assets/png8/course02.png" />
+      <span>日语高考课程</span>
     </div>
 
     <div class="title-content">
@@ -145,7 +148,8 @@
     </div>
 
     <div class="title-image" id="course05">
-      <img src="../assets/imgs/course05.png" />
+      <img src="../assets/png8/course02.png" />
+      <span>日语口语课程</span>
     </div>
 
     <div class="title-content">
@@ -218,9 +222,20 @@ export default {
   .title-image {
     width: 1200px;
     margin: 40px auto 0;
+    position: relative;
     img {
       width: 100%;
       vertical-align: top;
+    }
+    span {
+      position: absolute;
+      top: 91px;
+      left: 370px;
+      font-size: 50px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: rgba(190, 76, 65, 1);
+      line-height: 30px;
     }
   }
 

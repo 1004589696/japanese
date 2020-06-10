@@ -1,25 +1,25 @@
 <template>
   <div class="index-page">
     <div class="studyabroad-top-img">
-      <img src="../assets/imgs/index01.png" />
+      <img src="../assets/png8/index01.png" />
     </div>
 
     <BlockTitle ch="我们的优势" style="padding:59px 0 50px;" />
 
     <div class="img-list">
-      <img src="../assets/imgs/index02.png" />
-      <img src="../assets/imgs/index03.png" />
-      <img src="../assets/imgs/index04.png" />
+      <img src="../assets/png8/index02.png" />
+      <img src="../assets/png8/index03.png" />
+      <img src="../assets/png8/index04.png" />
     </div>
 
     <BlockTitle ch="我们的课程" style="padding:59px 0 50px;" />
 
     <div class="img-list2">
-      <img class="width385" src="../assets/imgs/index05.png" />
-      <img class="width355" src="../assets/imgs/index06.png" />
-      <img class="width355" src="../assets/imgs/index07.png" />
-      <img class="width355" src="../assets/imgs/index08.png" />
-      <img class="width355" src="../assets/imgs/index09.png" />
+      <img class="width385" src="../assets/png8/index05.png" />
+      <img class="width355" src="../assets/png8/index06.png" />
+      <img class="width355" src="../assets/png8/index07.png" />
+      <img class="width355" src="../assets/png8/index08.png" />
+      <img class="width355" src="../assets/png8/index09.png" />
     </div>
 
     <BlockTitle ch="我们的师资" style="padding:59px 0 50px;" />
@@ -27,7 +27,7 @@
     <div class="our-teachers">
       <div>
         <div class="teachers-img">
-          <img src="../assets/imgs/index10.png" />
+          <img src="../assets/png8/index10.png" />
         </div>
         <div class="teachers-name">浦田美玲</div>
         <div class="teachers-intro">（游学老师）</div>
@@ -37,7 +37,7 @@
       </div>
       <div>
         <div class="teachers-img">
-          <img src="../assets/imgs/index11.png" />
+          <img src="../assets/png8/index11.png" />
         </div>
         <div class="teachers-name">赵老师</div>
         <div class="teachers-intro">（游学老师）</div>
@@ -48,7 +48,7 @@
       </div>
       <div>
         <div class="teachers-img">
-          <img src="../assets/imgs/index12.png" />
+          <img src="../assets/png8/index12.png" />
         </div>
         <div class="teachers-name">谢老师</div>
         <div class="teachers-intro">（留学、游学老师）</div>
@@ -59,7 +59,7 @@
       </div>
       <div>
         <div class="teachers-img">
-          <img src="../assets/imgs/index13.png" />
+          <img src="../assets/png8/index13.png" />
         </div>
         <div class="teachers-name">胡老师</div>
         <div class="teachers-intro">（日语初级精讲老师）</div>
@@ -70,7 +70,7 @@
       </div>
       <div>
         <div class="teachers-img">
-          <img src="../assets/imgs/index14.png" />
+          <img src="../assets/png8/index14.png" />
         </div>
         <div class="teachers-name">贺老师</div>
         <div class="teachers-intro">（口语老师）</div>
@@ -79,21 +79,31 @@
         >毕业于日本九州大学修士，高级口语老师，深受日语文化影响，独具特色的口语练习方式，让学员脱离中文式日语口语。达到工作日语所需要求，并且让学员在口语学习过程中能真正的做到会说到爱说。</div>
         <div class="teachers-desc2">教龄：8年</div>
       </div>
+      <div>
+        <div class="teachers-img">
+          <img src="../assets/png8/index22.png" />
+        </div>
+        <div class="teachers-name">小松崎 幸隆</div>
+        <div class="teachers-intro">(游学老师）</div>
+        <div
+          class="teachers-desc"
+        >中央大学文学部史科学東洋史専攻卒業。今では 日本で１０数年 韓国で１０年間 ３０００人以上の学生に日本語を教えてきました。その間ラジオパーソナリティをやって 6ヶ月日本語を教えました。韓国から日本に戻って ほかの日本語学校で校長をしました。今 東京学社で日本語を教えています。東京学社に入学した皆さんの「夢を叶う」お手伝いをします。一緒に頑張りましょう。</div>
+      </div>
     </div>
 
     <BlockTitle ch="我们的风采" style="padding:59px 0 50px;" />
 
     <div class="tour-experience">
       <div class="line01">
-        <img src="../assets/imgs/index15.png" />
-        <img src="../assets/imgs/index16.png" />
-        <img src="../assets/imgs/index17.png" />
-        <img src="../assets/imgs/index18.png" />
+        <img src="../assets/png8/index15.png" />
+        <img src="../assets/png8/index16.png" />
+        <img src="../assets/png8/index17.png" />
+        <img src="../assets/png8/index18.png" />
       </div>
       <div class="line02">
-        <img src="../assets/imgs/index19.png" />
-        <img src="../assets/imgs/index20.png" />
-        <img src="../assets/imgs/index21.png" />
+        <img src="../assets/png8/index19.png" />
+        <img src="../assets/png8/index20.png" />
+        <img src="../assets/png8/index21.png" />
       </div>
     </div>
     <Bottom />
@@ -156,12 +166,12 @@ export default {
         display: flex;
         justify-content: space-between;
         & > div {
-          flex: 0 0 350 * @px;
-          height: 815 * @px;
+          flex: 0 0 305 * @px;
+          height: 800 * @px;
           background-color: #fff;
           .teachers-img {
             width: 100%;
-            height: 328 * @px;
+            height: 287.5 * @px;
             overflow: hidden;
             img {
               width: 100%;
@@ -209,7 +219,7 @@ export default {
         .line01,
         .line02 {
           display: flex;
-          margin-bottom: 14 * @px;
+          margin-bottom: 10 * @px;
           justify-content: space-between;
         }
         .line01 {

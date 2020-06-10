@@ -1,7 +1,7 @@
 <template>
   <div class="aboutus-page">
     <div class="studyabroad-top-img">
-      <img src="../assets/imgs/aboutus01.png" />
+      <img src="../assets/png8/aboutus01.png" />
     </div>
 
     <div class="page-item">
@@ -57,81 +57,101 @@
     </div>
 
     <div class="mid-img">
-      <img src="../assets/imgs/aboutus02.png" />
+      <img src="../assets/png8/aboutus02.png" />
     </div>
 
     <BlockTitle ch="学员佳绩" style="padding:70px 0 60px;" />
     <div class="img-list">
-      <img src="../assets/imgs/aboutus03.png" />
-      <img src="../assets/imgs/aboutus04.png" />
-      <img src="../assets/imgs/aboutus05.png" />
-      <img src="../assets/imgs/aboutus06.png" />
+      <!-- <div :style="'left:-'+(currentIndex*309)+'px'">
+        <img src="../assets/png8/aboutus-img01.png" />
+        <img src="../assets/png8/aboutus-img02.png" />
+        <img src="../assets/png8/aboutus-img03.png" />
+        <img src="../assets/png8/aboutus-img04.png" />
+        <img src="../assets/png8/aboutus-img05.png" />
+        <img src="../assets/png8/aboutus-img06.png" />
+        <img src="../assets/png8/aboutus-img07.png" />
+        <img src="../assets/png8/aboutus-img08.png" />
+        <img src="../assets/png8/aboutus-img09.png" />
+        <img src="../assets/png8/aboutus-img10.png" />
+      </div>-->
+      <swiper ref="mySwiper" :options="swiperOptions">
+        <swiper-slide>
+          <img class="swiper-img" src="../assets/png8/aboutus-img01.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img class="swiper-img" src="../assets/png8/aboutus-img02.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img class="swiper-img" src="../assets/png8/aboutus-img03.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img class="swiper-img" src="../assets/png8/aboutus-img04.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img class="swiper-img" src="../assets/png8/aboutus-img05.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img class="swiper-img" src="../assets/png8/aboutus-img06.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img class="swiper-img" src="../assets/png8/aboutus-img07.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img class="swiper-img" src="../assets/png8/aboutus-img08.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img class="swiper-img" src="../assets/png8/aboutus-img09.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img class="swiper-img" src="../assets/png8/aboutus-img10.png" />
+        </swiper-slide>
+      </swiper>
     </div>
     <div class="img-list-bottom">
-      <img src="../assets/imgs/aboutus07.png" />
+      <span @click="reducerChange" class="pont">
+        <span class="top">
+          <i></i>
+        </span>
+      </span>
+      <span class="pre-index">{{swiper?'0'+(swiper.activeIndex+1):'01'}}</span>
+      <span class="index-ling"></span>
+      <span class="next-index">10</span>
+      <span @click="addChange" class="pont">
+        <span class="top top2">
+          <i></i>
+        </span>
+      </span>
     </div>
 
     <BlockTitle ch="学员心声" style="padding:60px 0 50px;" />
 
-    <div class="heat-item">
+    <div class="heat-item" v-for="(item,index) in c" :key="index">
       <div class="heat-item-img">
-        <img src="../assets/imgs/studyingabroad06.png" />
+        <img :src="pngarr[index]" />
       </div>
       <div class="heat-item-txt">
         <div class="heat-item-txt-top">
           <div>
             <span>姓名：</span>
-            <span class="fr-span">郑汛</span>
+            <span class="fr-span">{{item.name}}</span>
           </div>
           <div>
             <span>学校：</span>
-            <span class="fr-span">东北财经大学</span>
+            <span class="fr-span">{{item.school}}</span>
           </div>
           <div>
             <span>成绩:</span>
-            <span class="fr-span">N2:107 N1:105</span>
+            <span class="fr-span">{{item.score}}</span>
           </div>
           <div>
             <span>专业：</span>
-            <span class="fr-span">财政学</span>
+            <span class="fr-span">{{item.profession}}</span>
           </div>
         </div>
         <div class="heat-item-txt-title">学习感受：</div>
-        <div
-          class="heat-item-txt-content"
-        >先介绍一下学习成果吧，我是2018年3月来到这里学习日语的，2年时间不到，我分别于2019年7月和12月通过了N2和N1的考试，现在准备赴日升学考取修士。这当然要得益于这里的老师们的悉心指导，我认为任何语言的学习最重要的是两点，一是每天学习，二是从“听”到“说”。这里的课程时间安排是每周一到周六，几乎每天都可以得到学习，这样才容易建立持久的记忆。时间安排是相对自由的，会找一个大部分学生有空的时间来上课，即使你与多数人时间冲突，老师们仍然会负责地为你单独上课。并且，每次的课程不仅需要“听”，也要通过测试来锻炼你“说”的能力。“说”与“听”是两面一体的，锻炼“说”的同时，“听”的能力自然会得到加强。这虽然对学生来说会需要更多时间练习，但如果真心想学好一门语言，这是必不可少的，所以应该把它作为课程的一环来看待。只有老师判断你能比较完整地“说”出来，当天的课程才算结束。老师会非常负责的监督，对于我这种自控力比较差的学生来说，真是帮大忙了。另一方面，这里的老师同时也是很温柔可爱的，学习之余也会关心学生们的日常生活状况，会给我们带零食或者奶茶，这让我觉得学习氛围很放松，同时感到很暖心。久而久之，我们与老师慢慢就成为了好朋友。比起日语能力的巨大进步，我认为和老师同学们经历的那段生活时光才是我更宝贵的收获。</div>
+        <div class="heat-item-txt-content">{{item.feel}}</div>
       </div>
     </div>
-    <div class="heat-item">
-      <div class="heat-item-img">
-        <img src="../assets/imgs/studyingabroad07.png" />
-      </div>
-      <div class="heat-item-txt">
-        <div class="heat-item-txt-top">
-          <div>
-            <span>姓名：</span>
-            <span class="fr-span">秦泽慧</span>
-          </div>
-          <div>
-            <span>学校：</span>
-            <span class="fr-span">东北财经大学</span>
-          </div>
-          <div>
-            <span>成绩:</span>
-            <span class="fr-span">N2:135</span>
-          </div>
-          <div>
-            <span>专业：</span>
-            <span class="fr-span">统计学</span>
-          </div>
-        </div>
-        <div class="heat-item-txt-title">学习感受：</div>
-        <div
-          class="heat-item-txt-content"
-        >最开始想学日语的原因很简单，相信大部分人都是如此，因为喜欢动漫。但真正决定报班学却是一个很曲折的过程。一开始害怕有目的性学习会消磨自己的兴趣，让本来自己喜欢的一件事情变成自己的负担。也尝试过自学，实在太考验自制力了，自己也没什么学习方法和技巧，没能坚持下去，最终决定先去试听一节五十音看看。非常愉快的度过一节课后，就记住了全部的平假名，然后，因为老师们都太漂亮了我就报名了哈哈哈。老师漂亮是真的，老师上的课很有趣很开心也是真的。我们当时在学校上课，一周只休息一天，利用在学校的课余时间来学习日语。听着有点辛苦，但其实只是比平时少玩一会儿手机而已，而且上课的学习氛围很轻松愉快，每次都觉得很快就上完了。老师也很负责，除了平日的学习、课后检测，考试前也会带大家一起刷题，练听力，平时也会鼓励我们练习口语（也会监督犯懒不想检测偷溜的人比如我）。我自己本身是看了太久的动漫，基础还不错，去日本玩可以进行简单的交流那种。所以只学了半年，报着试试看的心理就去考n2了，得到了比较神奇的结果。其实按照一开始自己的目标，我的日语学习应该就到此为止了，但我还在继续学习，因为我觉得在这里，我可以变成更优秀的自己。有上进心又努力的伙伴们，快乐轻松的上课氛围，紧凑合理的课程安排，最重要的是，专业能力强还特别漂亮的老师！所以再让我多赖在这一会儿，进一步地学习日语（多看几眼老师）吧～</div>
-      </div>
-    </div>
-
     <Bottom />
   </div>
 </template>
@@ -139,13 +159,61 @@
 <script>
 import Bottom from "../components/Bottom.vue";
 import BlockTitle from "../components/BlockTitle.vue";
+import c from "./data.json";
+import png01 from "../assets/png8/aboutus-01.png";
+import png02 from "../assets/png8/aboutus-02.png";
+import png03 from "../assets/png8/aboutus-03.png";
+import png04 from "../assets/png8/aboutus-04.png";
+import png05 from "../assets/png8/aboutus-05.png";
+import png06 from "../assets/png8/aboutus-06.png";
+import png07 from "../assets/png8/aboutus-07.png";
+import png08 from "../assets/png8/aboutus-08.png";
+import png09 from "../assets/png8/aboutus-09.png";
+import png10 from "../assets/png8/aboutus-010.png";
+
 export default {
   components: {
     Bottom,
     BlockTitle
   },
   data() {
-    return {};
+    return {
+      c,
+      pngarr: [
+        png01,
+        png02,
+        png03,
+        png04,
+        png05,
+        png06,
+        png07,
+        png08,
+        png09,
+        png10
+      ],
+      swiperOptions: {
+        slidesPerView: 4, // 显示的数量
+        spaceBetween: 30 // 每张的间距
+      },
+      swiper: null
+    };
+  },
+  mounted() {
+    this.swiper = this.$refs.mySwiper.$swiper;
+  },
+  methods: {
+    addChange() {
+      let index = this.swiper.activeIndex;
+      if (index < 9) {
+        this.swiper.slideTo(index + 1, 1000, false);
+      }
+    },
+    reducerChange() {
+      let index = this.swiper.activeIndex;
+      if (index > 0) {
+        this.swiper.slideTo(index - 1, 1000, false);
+      }
+    }
   }
 };
 </script>
@@ -232,16 +300,85 @@ export default {
 
   .img-list {
     width: 1200px;
+    height: 411px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    img {
-      height: 413px;
+    overflow: hidden;
+    .swiper-img {
+      height: 411px;
+      width: 279px;
     }
   }
   .img-list-bottom {
-    text-align: center;
     padding-top: 30px;
+    text-align: center;
+    height: 21px;
+    .top {
+      position: relative;
+      top: 10px;
+      display: inline-block;
+      vertical-align: top;
+      width: 43px;
+      height: 1px;
+      i {
+        position: absolute;
+        top: 0.5px;
+        left: 0;
+        z-index: 2;
+        width: 43px;
+        height: 1px;
+        background-color: #333333;
+      }
+    }
+    .top:before,
+    .top:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 13px;
+      height: 1px;
+      background-color: #333333;
+      transform-origin: 0 0;
+    }
+    .top:before {
+      transform: rotate(-35deg);
+    }
+    .top:after {
+      transform: rotate(35deg);
+    }
+    .top2 {
+      top: 11px;
+      i {
+        top: -0.5px;
+      }
+    }
+    .top2:before,
+    .top2:after {
+      left: 43px;
+    }
+    .top2:before {
+      transform: rotate(-145deg);
+    }
+    .top2:after {
+      transform: rotate(145deg);
+    }
+    .pre-index {
+      color: #0096ff;
+    }
+    .index-ling {
+      position: relative;
+      top: 10px;
+      display: inline-block;
+      vertical-align: top;
+      width: 43px;
+      height: 1px;
+      background-color: #333333;
+      margin: 0 20px;
+    }
+    .pont {
+      cursor: pointer;
+    }
   }
 
   .heat-item {
