@@ -1,11 +1,11 @@
 <template>
   <div class="course-page">
     <div class="top-image">
-      <img src="../assets/png8/course01.png" />
+      <img src="../assets/tinified/course01.png" />
     </div>
 
     <div class="title-image" id="course02">
-      <img src="../assets/png8/course02.png" />
+      <img src="../assets/tinified/course02.png" />
       <span>日语入门兴趣课程</span>
     </div>
 
@@ -35,7 +35,7 @@
     </div>
 
     <div class="title-image" id="course03">
-      <img src="../assets/png8/course02.png" />
+      <img src="../assets/tinified/course02.png" />
       <span>日语考级、考研课程</span>
     </div>
 
@@ -117,7 +117,7 @@
     </div>
 
     <div class="title-image" id="course04">
-      <img src="../assets/png8/course02.png" />
+      <img src="../assets/tinified/course02.png" />
       <span>日语高考课程</span>
     </div>
 
@@ -148,7 +148,7 @@
     </div>
 
     <div class="title-image" id="course05">
-      <img src="../assets/png8/course02.png" />
+      <img src="../assets/tinified/course02.png" />
       <span>日语口语课程</span>
     </div>
 

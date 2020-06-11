@@ -1,7 +1,7 @@
 <template>
   <div class="aboutus-page">
     <div class="studyabroad-top-img">
-      <img src="../assets/png8/aboutus01.png" />
+      <img src="../assets/tinified/aboutus01.png" />
     </div>
 
     <div class="page-item">
@@ -57,53 +57,53 @@
     </div>
 
     <div class="mid-img">
-      <img src="../assets/png8/aboutus02.png" />
+      <img src="../assets/tinified/aboutus02.png" />
     </div>
 
     <BlockTitle ch="学员佳绩" style="padding:70px 0 60px;" />
     <div class="img-list">
       <!-- <div :style="'left:-'+(currentIndex*309)+'px'">
-        <img src="../assets/png8/aboutus-img01.png" />
-        <img src="../assets/png8/aboutus-img02.png" />
-        <img src="../assets/png8/aboutus-img03.png" />
-        <img src="../assets/png8/aboutus-img04.png" />
-        <img src="../assets/png8/aboutus-img05.png" />
-        <img src="../assets/png8/aboutus-img06.png" />
-        <img src="../assets/png8/aboutus-img07.png" />
-        <img src="../assets/png8/aboutus-img08.png" />
-        <img src="../assets/png8/aboutus-img09.png" />
-        <img src="../assets/png8/aboutus-img10.png" />
+        <img src="../assets/tinified/aboutus-img01.png" />
+        <img src="../assets/tinified/aboutus-img02.png" />
+        <img src="../assets/tinified/aboutus-img03.png" />
+        <img src="../assets/tinified/aboutus-img04.png" />
+        <img src="../assets/tinified/aboutus-img05.png" />
+        <img src="../assets/tinified/aboutus-img06.png" />
+        <img src="../assets/tinified/aboutus-img07.png" />
+        <img src="../assets/tinified/aboutus-img08.png" />
+        <img src="../assets/tinified/aboutus-img09.png" />
+        <img src="../assets/tinified/aboutus-img10.png" />
       </div>-->
       <swiper ref="mySwiper" :options="swiperOptions">
         <swiper-slide>
-          <img class="swiper-img" src="../assets/png8/aboutus-img01.png" />
+          <img class="swiper-img" src="../assets/tinified/aboutus-img01.png" />
         </swiper-slide>
         <swiper-slide>
-          <img class="swiper-img" src="../assets/png8/aboutus-img02.png" />
+          <img class="swiper-img" src="../assets/tinified/aboutus-img02.png" />
         </swiper-slide>
         <swiper-slide>
-          <img class="swiper-img" src="../assets/png8/aboutus-img03.png" />
+          <img class="swiper-img" src="../assets/tinified/aboutus-img03.png" />
         </swiper-slide>
         <swiper-slide>
-          <img class="swiper-img" src="../assets/png8/aboutus-img04.png" />
+          <img class="swiper-img" src="../assets/tinified/aboutus-img04.png" />
         </swiper-slide>
         <swiper-slide>
-          <img class="swiper-img" src="../assets/png8/aboutus-img05.png" />
+          <img class="swiper-img" src="../assets/tinified/aboutus-img05.png" />
         </swiper-slide>
         <swiper-slide>
-          <img class="swiper-img" src="../assets/png8/aboutus-img06.png" />
+          <img class="swiper-img" src="../assets/tinified/aboutus-img06.png" />
         </swiper-slide>
         <swiper-slide>
-          <img class="swiper-img" src="../assets/png8/aboutus-img07.png" />
+          <img class="swiper-img" src="../assets/tinified/aboutus-img07.png" />
         </swiper-slide>
         <swiper-slide>
-          <img class="swiper-img" src="../assets/png8/aboutus-img08.png" />
+          <img class="swiper-img" src="../assets/tinified/aboutus-img08.png" />
         </swiper-slide>
         <swiper-slide>
-          <img class="swiper-img" src="../assets/png8/aboutus-img09.png" />
+          <img class="swiper-img" src="../assets/tinified/aboutus-img09.png" />
         </swiper-slide>
         <swiper-slide>
-          <img class="swiper-img" src="../assets/png8/aboutus-img10.png" />
+          <img class="swiper-img" src="../assets/tinified/aboutus-img10.png" />
         </swiper-slide>
       </swiper>
     </div>
@@ -160,16 +160,16 @@
 import Bottom from "../components/Bottom.vue";
 import BlockTitle from "../components/BlockTitle.vue";
 import c from "./data.json";
-import png01 from "../assets/png8/aboutus-01.png";
-import png02 from "../assets/png8/aboutus-02.png";
-import png03 from "../assets/png8/aboutus-03.png";
-import png04 from "../assets/png8/aboutus-04.png";
-import png05 from "../assets/png8/aboutus-05.png";
-import png06 from "../assets/png8/aboutus-06.png";
-import png07 from "../assets/png8/aboutus-07.png";
-import png08 from "../assets/png8/aboutus-08.png";
-import png09 from "../assets/png8/aboutus-09.png";
-import png10 from "../assets/png8/aboutus-010.png";
+import png01 from "../assets/tinified/aboutus-01.png";
+import png02 from "../assets/tinified/aboutus-02.png";
+import png03 from "../assets/tinified/aboutus-03.png";
+import png04 from "../assets/tinified/aboutus-04.png";
+import png05 from "../assets/tinified/aboutus-05.png";
+import png06 from "../assets/tinified/aboutus-06.png";
+import png07 from "../assets/tinified/aboutus-07.png";
+import png08 from "../assets/tinified/aboutus-08.png";
+import png09 from "../assets/tinified/aboutus-09.png";
+import png10 from "../assets/tinified/aboutus-010.png";
 
 export default {
   components: {

@@ -3,9 +3,9 @@
     <div :class="isBlue?'header-box blue':'header-box'">
       <div>
         <div class="logo">
-          <img class="logo-img" src="../assets/png8/logo.png" />
-          <img v-if="isBlue" class="logo-txt" src="../assets/png8/logotxt01.png" />
-          <img v-else class="logo-txt" src="../assets/png8/logotxt02.png" />
+          <img class="logo-img" src="../assets/tinified/logo.png" />
+          <img v-if="isBlue" class="logo-txt" src="../assets/tinified/logotxt01.png" />
+          <img v-else class="logo-txt" src="../assets/tinified/logotxt02.png" />
         </div>
         <div class="menu">
           <span

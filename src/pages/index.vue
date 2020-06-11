@@ -1,25 +1,25 @@
 <template>
   <div class="index-page">
     <div class="studyabroad-top-img">
-      <img src="../assets/png8/index01.png" />
+      <img src="../assets/tinified/index01.png" />
     </div>
 
     <BlockTitle ch="我们的优势" style="padding:59px 0 50px;" />
 
     <div class="img-list">
-      <img src="../assets/png8/index02.png" />
-      <img src="../assets/png8/index03.png" />
-      <img src="../assets/png8/index04.png" />
+      <img src="../assets/tinified/index02.png" />
+      <img src="../assets/tinified/index03.png" />
+      <img src="../assets/tinified/index04.png" />
     </div>
 
     <BlockTitle ch="我们的课程" style="padding:59px 0 50px;" />
 
     <div class="img-list2">
-      <img class="width385" src="../assets/png8/index05.png" />
-      <img class="width355" src="../assets/png8/index06.png" />
-      <img class="width355" src="../assets/png8/index07.png" />
-      <img class="width355" src="../assets/png8/index08.png" />
-      <img class="width355" src="../assets/png8/index09.png" />
+      <img class="width385" src="../assets/tinified/index05.png" />
+      <img class="width355" src="../assets/tinified/index06.png" />
+      <img class="width355" src="../assets/tinified/index07.png" />
+      <img class="width355" src="../assets/tinified/index08.png" />
+      <img class="width355" src="../assets/tinified/index09.png" />
     </div>
 
     <BlockTitle ch="我们的师资" style="padding:59px 0 50px;" />
@@ -27,7 +27,7 @@
     <div class="our-teachers">
       <div>
         <div class="teachers-img">
-          <img src="../assets/png8/index10.png" />
+          <img src="../assets/tinified/index10.png" />
         </div>
         <div class="teachers-name">浦田美玲</div>
         <div class="teachers-intro">（游学老师）</div>
@@ -37,7 +37,7 @@
       </div>
       <div>
         <div class="teachers-img">
-          <img src="../assets/png8/index11.png" />
+          <img src="../assets/tinified/index11.png" />
         </div>
         <div class="teachers-name">赵老师</div>
         <div class="teachers-intro">（游学老师）</div>
@@ -48,7 +48,7 @@
       </div>
       <div>
         <div class="teachers-img">
-          <img src="../assets/png8/index12.png" />
+          <img src="../assets/tinified/index12.png" />
         </div>
         <div class="teachers-name">谢老师</div>
         <div class="teachers-intro">（留学、游学老师）</div>
@@ -59,7 +59,7 @@
       </div>
       <div>
         <div class="teachers-img">
-          <img src="../assets/png8/index13.png" />
+          <img src="../assets/tinified/index13.png" />
         </div>
         <div class="teachers-name">胡老师</div>
         <div class="teachers-intro">（日语初级精讲老师）</div>
@@ -70,7 +70,7 @@
       </div>
       <div>
         <div class="teachers-img">
-          <img src="../assets/png8/index14.png" />
+          <img src="../assets/tinified/index14.png" />
         </div>
         <div class="teachers-name">贺老师</div>
         <div class="teachers-intro">（口语老师）</div>
@@ -81,7 +81,7 @@
       </div>
       <div>
         <div class="teachers-img">
-          <img src="../assets/png8/index22.png" />
+          <img src="../assets/tinified/index22.png" />
         </div>
         <div class="teachers-name">小松崎 幸隆</div>
         <div class="teachers-intro">(游学老师）</div>
@@ -95,15 +95,15 @@
 
     <div class="tour-experience">
       <div class="line01">
-        <img src="../assets/png8/index15.png" />
-        <img src="../assets/png8/index16.png" />
-        <img src="../assets/png8/index17.png" />
-        <img src="../assets/png8/index18.png" />
+        <img src="../assets/tinified/index15.png" />
+        <img src="../assets/tinified/index16.png" />
+        <img src="../assets/tinified/index17.png" />
+        <img src="../assets/tinified/index18.png" />
       </div>
       <div class="line02">
-        <img src="../assets/png8/index19.png" />
-        <img src="../assets/png8/index20.png" />
-        <img src="../assets/png8/index21.png" />
+        <img src="../assets/tinified/index19.png" />
+        <img src="../assets/tinified/index20.png" />
+        <img src="../assets/tinified/index21.png" />
       </div>
     </div>
     <Bottom />

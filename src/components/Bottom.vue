@@ -3,7 +3,7 @@
     <div>
       <div class="content-box">
         <div class="img-qr">
-          <img src="../assets/imgs/qr01.png" />
+          <img src="../assets/tinified/qr01.png" />
           <p>微信咨询/报名</p>
         </div>
         <div class="txt">

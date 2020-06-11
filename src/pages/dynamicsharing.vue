@@ -1,7 +1,7 @@
 <template>
   <div class="dynamicsharing-page">
     <div class="studyabroad-top-img">
-      <img src="../assets/png8/dynamicsharing01.png" />
+      <img src="../assets/tinified/dynamicsharing01.png" />
     </div>
     <BlockTitle ch="动态分享" style="margin:68px 0;" />
 

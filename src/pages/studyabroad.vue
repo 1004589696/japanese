@@ -1,7 +1,7 @@
 <template>
   <div class="studyabroad-page">
     <div class="studyabroad-top-img">
-      <img src="../assets/png8/studyabroad01.png" />
+      <img src="../assets/tinified/studyabroad01.png" />
     </div>
 
     <div class="item-content">
@@ -54,7 +54,7 @@
 
     <div class="item-content2">
       <div class="item-content2-title">
-        <img src="../assets/png8/studyabroad03.png" />
+        <img src="../assets/tinified/studyabroad03.png" />
         申请类套餐介绍
       </div>
       <div class="left-right">
@@ -72,7 +72,7 @@
         </div>
       </div>
       <div class="item-content2-title">
-        <img src="../assets/png8/studyabroad03.png" />
+        <img src="../assets/tinified/studyabroad03.png" />
         申请类服务套餐介绍
       </div>
       <div
@@ -113,7 +113,7 @@
         </div>
       </div>
       <div class="item-content2-title">
-        <img src="../assets/png8/studyabroad03.png" />
+        <img src="../assets/tinified/studyabroad03.png" />
         短期游学
       </div>
       <div
@@ -127,23 +127,23 @@
 
     <div class="tour-experience">
       <div class="line01">
-        <img src="../assets/png8/dynamic01.png" />
-        <img src="../assets/png8/dynamic02.png" />
-        <img src="../assets/png8/dynamic03.png" />
-        <img src="../assets/png8/dynamic04.png" />
-        <img src="../assets/png8/dynamic05.png" />
+        <img src="../assets/tinified/dynamic01.png" />
+        <img src="../assets/tinified/dynamic02.png" />
+        <img src="../assets/tinified/dynamic03.png" />
+        <img src="../assets/tinified/dynamic04.png" />
+        <img src="../assets/tinified/dynamic05.png" />
       </div>
       <div class="line02">
-        <img src="../assets/png8/dynamic06.png" />
-        <img src="../assets/png8/dynamic07.png" />
-        <img src="../assets/png8/dynamic08.png" />
-        <img src="../assets/png8/dynamic09.png" />
+        <img src="../assets/tinified/dynamic06.png" />
+        <img src="../assets/tinified/dynamic07.png" />
+        <img src="../assets/tinified/dynamic08.png" />
+        <img src="../assets/tinified/dynamic09.png" />
       </div>
       <div class="line03">
-        <img src="../assets/png8/dynamic10.png" />
-        <img src="../assets/png8/dynamic11.png" />
-        <img src="../assets/png8/dynamic12.png" />
-        <img src="../assets/png8/dynamic13.png" />
+        <img src="../assets/tinified/dynamic10.png" />
+        <img src="../assets/tinified/dynamic11.png" />
+        <img src="../assets/tinified/dynamic12.png" />
+        <img src="../assets/tinified/dynamic13.png" />
       </div>
     </div>
     <Bottom />
@@ -217,7 +217,7 @@ export default {
             flex: 0 0 220px;
             width: 220px;
             height: 170px;
-            background: url("../assets/png8/studyabroad02.png") no-repeat center;
+            background: url("../assets/tinified/studyabroad02.png") no-repeat center;
             background-size: 100%;
             position: relative;
             display: table;
@@ -297,7 +297,7 @@ export default {
             flex: 0 0 150px;
             width: 150px;
             height: 131px;
-            background: url("../assets/png8/studyabroad04.png") no-repeat center;
+            background: url("../assets/tinified/studyabroad04.png") no-repeat center;
             background-size: 100%;
             position: relative;
             display: table;
