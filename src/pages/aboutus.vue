@@ -23,35 +23,35 @@
         style="background:linear-gradient(90deg,rgba(249,97,147,1),rgba(254,131,222,1));"
       >
         <div class="tabbars-item-title">大连工业大学教学点</div>
-        <div class="tabbars-item-desc">联系方式: 1234567890</div>
+        <div class="tabbars-item-desc">联系方式: 18173280543</div>
       </div>
       <div
         class="tabbars-item"
         style="background:linear-gradient(91deg,rgba(0,138,255,1),rgba(0,204,255,1));"
       >
         <div class="tabbars-item-title">黄河路辽师教学点</div>
-        <div class="tabbars-item-desc">联系方式: 联系方式: 1234567890</div>
+        <div class="tabbars-item-desc">联系方式: 13898604692</div>
       </div>
       <div
         class="tabbars-item"
         style="background:linear-gradient(90deg,rgba(153,58,252,1),rgba(227,153,227,1));"
       >
         <div class="tabbars-item-title">沙河口东财教学点</div>
-        <div class="tabbars-item-desc">联系方式: 1234567890</div>
+        <div class="tabbars-item-desc">联系方式: 18674399914</div>
       </div>
       <div
         class="tabbars-item"
         style="background:linear-gradient(90deg,rgba(67,194,188,1),rgba(132,226,139,1));"
       >
         <div class="tabbars-item-title">金州连大教学点</div>
-        <div class="tabbars-item-desc">联系方式: 1234567890</div>
+        <div class="tabbars-item-desc">联系方式: 18674399914</div>
       </div>
       <div
         class="tabbars-item"
         style="background:linear-gradient(90deg,rgba(254,137,49,1),rgba(255,195,79,1));"
       >
         <div class="tabbars-item-title">旅顺科院教学点</div>
-        <div class="tabbars-item-desc">联系方式: 1234567890</div>
+        <div class="tabbars-item-desc">联系方式: 18173280543</div>
       </div>
       <div class="tabbars-item" style="opacity:0;"></div>
     </div>
