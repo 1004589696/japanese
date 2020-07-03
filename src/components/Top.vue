@@ -75,7 +75,7 @@ export default {
   },
   methods: {
     changePath(path) {
-      if (path != this.$route.path && path != "/course") {
+      if (path != this.$route.path) {
         this.$router.push(path);
       }
     },

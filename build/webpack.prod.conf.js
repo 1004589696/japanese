@@ -6,8 +6,8 @@ const config = require("../config");
 const merge = require("webpack-merge");
 const baseWebpackConfig = require("./webpack.base.conf");
 
-const PrerenderSPAPlugin = require("prerender-spa-plugin");
-const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
+// const PrerenderSPAPlugin = require("prerender-spa-plugin");
+// const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -16,31 +16,31 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 const env = require("../config/prod.env");
 
-const PrerenderSPA = new PrerenderSPAPlugin({
-  // 生成文件的路径，也可以与webpakc打包的一致。
-  // 下面这句话非常重要！！！
-  // 这个目录只能有一级，如果目录层次大于一级，在生成的时候不会有任何错误提示，在预渲染的时候只会卡着不动。
-  staticDir: path.join(__dirname, "../dist"),
+// const PrerenderSPA = new PrerenderSPAPlugin({
+//   // 生成文件的路径，也可以与webpakc打包的一致。
+//   // 下面这句话非常重要！！！
+//   // 这个目录只能有一级，如果目录层次大于一级，在生成的时候不会有任何错误提示，在预渲染的时候只会卡着不动。
+//   staticDir: path.join(__dirname, "../dist"),
 
-  // 对应自己的路由文件，比如a有参数，就需要写成 /a/param1。
-  routes: [
-    "/",
-    "/course",
-    "/studyabroad",
-    "/dynamicsharing",
-    "/aboutus"
-  ],
+//   // 对应自己的路由文件，比如a有参数，就需要写成 /a/param1。
+//   routes: [
+//     "/",
+//     "/course",
+//     "/studyabroad",
+//     "/dynamicsharing",
+//     "/aboutus"
+//   ],
 
-  // 这个很重要，如果没有配置这段，也不会进行预编译
-  renderer: new Renderer({
-    inject: {
-      foo: "bar"
-    },
-    // headless: false,
-    renderAfterDocumentEvent: "render-event", // 在 main.js 中 document.dispatchEvent(new Event('render-event'))，两者的事件名称要对应上。
-    args: ["--no-sandbox", "--disable-setuid-sandbox"]
-  })
-});
+//   // 这个很重要，如果没有配置这段，也不会进行预编译
+//   renderer: new Renderer({
+//     inject: {
+//       foo: "bar"
+//     },
+//     // headless: false,
+//     renderAfterDocumentEvent: "render-event", // 在 main.js 中 document.dispatchEvent(new Event('render-event'))，两者的事件名称要对应上。
+//     args: ["--no-sandbox", "--disable-setuid-sandbox"]
+//   })
+// });
 
 const webpackConfig = merge(baseWebpackConfig, {
   module: {
@@ -57,7 +57,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     chunkFilename: utils.assetsPath("js/[id].[chunkhash].js")
   },
   plugins: [
-    PrerenderSPA,
+    // PrerenderSPA,
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new webpack.DefinePlugin({
       "process.env": env

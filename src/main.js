@@ -6,7 +6,7 @@ import router from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css'
 
-import MetaInfo from 'vue-meta-info'
+// import MetaInfo from 'vue-meta-info'
 Vue.use(VueAwesomeSwiper)
 
 
@@ -18,7 +18,7 @@ new Vue({
   router,
   components: { App },
   template: '<App/>',
-  mounted () {
-    document.dispatchEvent(new Event('render-event'))
-  }
+  // mounted () {
+  //   document.dispatchEvent(new Event('render-event'))
+  // }
 })

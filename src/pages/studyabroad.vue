@@ -217,7 +217,8 @@ export default {
             flex: 0 0 220px;
             width: 220px;
             height: 170px;
-            background: url("../assets/tinified/studyabroad02.png") no-repeat center;
+            background: url("../assets/tinified/studyabroad02.png") no-repeat
+              center;
             background-size: 100%;
             position: relative;
             display: table;
@@ -297,7 +298,8 @@ export default {
             flex: 0 0 150px;
             width: 150px;
             height: 131px;
-            background: url("../assets/tinified/studyabroad04.png") no-repeat center;
+            background: url("../assets/tinified/studyabroad04.png") no-repeat
+              center;
             background-size: 100%;
             position: relative;
             display: table;
@@ -328,6 +330,7 @@ export default {
       }
 
       .tour-experience {
+        overflow: hidden;
         .line01,
         .line02,
         .line03 {

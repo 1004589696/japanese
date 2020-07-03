@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    <p>备案号：4s412dsf1asdfa1sdfa12dsf</p>
+    <p style="font-size:14px;color:rgba(255,255,255,0.7);">蜀ICP备20020435号</p>
   </div>
 </template>
 
