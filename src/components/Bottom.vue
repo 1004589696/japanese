@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    <p style="font-size:14px;color:rgba(255,255,255,0.7);">蜀ICP备20020435号</p>
+    <p><a class="linek" href="http://www.beian.miit.gov.cn/" target="_blank" style="font-size:14px;color:rgba(255,255,255,0.7);">蜀ICP备20020435号</a></p>
   </div>
 </template>
 
@@ -122,6 +122,9 @@ export default {
     color: rgba(255, 255, 255, 1);
     line-height: 30px;
     text-align: center;
+  }
+  .linek{
+    text-decoration: none;
   }
 }
 </style>
