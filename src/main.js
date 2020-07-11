@@ -3,8 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import './pages/m/rem.js';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css'
+
 
 // import MetaInfo from 'vue-meta-info'
 Vue.use(VueAwesomeSwiper)
