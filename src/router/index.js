@@ -4,7 +4,8 @@ import Router from "vue-router";
 Vue.use(Router);
 
 const vueRouter = new Router({
-  routes: [{
+  routes: [
+    {
       path: "/",
       component: () => import("@/pages/index/index.vue")
     },
@@ -39,7 +40,8 @@ const vueRouter = new Router({
     {
       path: "/aboutus",
       component: () => import("@/pages/aboutus/aboutus.vue")
-    }, {
+    },
+    {
       path: "/m/aboutus",
       component: () => import("@/pages/m/aboutus/aboutus.vue")
     }
@@ -48,20 +50,20 @@ const vueRouter = new Router({
 
 vueRouter.beforeEach((to, from, next) => {
   let path = to.path;
-  let bol = (path.indexOf("/m") === -1);
+  let bol = path.indexOf("/m") === -1;
   if (window.isMobel && bol) {
-    path = '/m' + path;
+    path = "/m" + path;
     next({
       path
-    })
+    });
   } else if (!window.isMobel && !bol) {
-    path = path.replace('/m', '');
+    path = path.replace("/m", "");
     next({
       path
-    })
+    });
   } else {
-    next()
+    next();
   }
-})
+});
 
 export default vueRouter;

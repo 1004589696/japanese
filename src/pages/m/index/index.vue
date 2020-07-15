@@ -1,5 +1,6 @@
 <template>
     <div>
+        <MTitle />
         <img class="top-img" src="./index02.png" />
         <div class="sub-title">
             <span>我们的优势</span>
@@ -230,7 +231,9 @@
 </template>
 
 <script>
+import MTitle from '../components/MTitle/MTitle.vue'
 export default {
+    components:{MTitle},
     data() {
         return {
             swiper: null
