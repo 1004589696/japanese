@@ -1,5 +1,6 @@
 <template>
     <div>
+        <MTitle />
         <img class="top-img" src="./s01.png" />
         <div class="sub-title">
             <span>留学流程</span>
@@ -110,11 +111,15 @@
             <span>游学体验</span>
         </div>
         <img class="top-img" src="./s05.png" style="padding-top:0.5rem;" />
+        <MBottom />
     </div>
 </template>
 
 <script>
+import MTitle from "../components/MTitle/MTitle.vue";
+import MBottom from "@/pages/m/components/MBottom/MBottom.vue";
 export default {
+    components: { MTitle, MBottom },
     data() {
         return {};
     }

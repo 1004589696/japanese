@@ -227,13 +227,15 @@
             </swiper>
             <div class="btn-next" v-if="swiper&&swiper.activeIndex<5" @click="next">NEXT</div>
         </div>
+        <MBottom />
     </div>
 </template>
 
 <script>
-import MTitle from '../components/MTitle/MTitle.vue'
+import MTitle from "../components/MTitle/MTitle.vue";
+import MBottom from "@/pages/m/components/MBottom/MBottom.vue";
 export default {
-    components:{MTitle},
+    components: { MTitle, MBottom },
     data() {
         return {
             swiper: null
