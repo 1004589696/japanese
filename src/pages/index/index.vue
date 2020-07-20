@@ -294,7 +294,7 @@ export default {
 }
 
 .mien > img {
-    height: 1029 * @rrpx;
+    height: 1500 * @rrpx;
 }
 
 @media (min-width: 1054px) {

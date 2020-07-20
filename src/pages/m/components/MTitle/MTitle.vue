@@ -91,7 +91,8 @@ export default {
         height: 2.213332rem;
         z-index: 101;
         background-color: #fff;
-        padding-top: 0.3rem;
+        padding-top: 0.1rem;
+        border-bottom: 1px solid rgba(222,222,222,0.5);
         .menu-line {
             display: flex;
             .menu-line-item {
@@ -101,7 +102,7 @@ export default {
                 a {
                     display: inline-block;
                     vertical-align: top;
-                    line-height: 0.8rem;
+                    line-height: 1rem;
                     font-size: 0.373333rem;
                     font-family: PingFangSC;
                     font-weight: 400;
@@ -109,13 +110,14 @@ export default {
                     text-decoration: none;
                     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
                     -webkit-tap-highlight-color: transparent;
+                    padding: 0 0.2rem;
                 }
             }
             .menu-line-item::after {
                 content: "/";
                 position: absolute;
                 right: 0;
-                top: 0.1rem;
+                top: 0.23rem;
                 font-size: 0.4rem;
                 font-family: PingFangSC;
                 font-weight: 400;
