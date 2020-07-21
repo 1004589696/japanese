@@ -194,6 +194,7 @@ export default {
     flex-wrap: wrap;
     & > div {
         flex: 0 0 2.933333rem;
+        width: 2.933333rem;
         height: 2.266666rem;
         background: url("./s02.png") no-repeat center;
         background-size: 100%;
@@ -237,6 +238,7 @@ export default {
     flex-wrap: wrap;
     & > div {
         flex: 0 0 2.2266rem;
+        width: 2.2266rem;
         height: 1.9333rem;
         background: url("./s04.png") no-repeat center;
         background-size: 100%;

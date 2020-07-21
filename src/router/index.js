@@ -45,7 +45,10 @@ const vueRouter = new Router({
       path: "/m/aboutus",
       component: () => import("@/pages/m/aboutus/aboutus.vue")
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    return { x: 0, y: 0 };
+  }
 });
 
 vueRouter.beforeEach((to, from, next) => {
