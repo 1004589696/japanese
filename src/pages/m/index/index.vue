@@ -196,36 +196,86 @@
             <swiper ref="mySwiper" :options="{autoplay:{disableOnInteraction:false}}">
                 <swiper-slide>
                     <div class="fengcai">
-                        <img src="./index21.png" />
+                        <img src="./s1.png" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="fengcai">
-                        <img src="./index22.png" />
+                        <img src="./s2.png" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="fengcai">
-                        <img src="./index23.png" />
+                        <img src="./s3.png" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="fengcai">
-                        <img src="./index24.png" />
+                        <img src="./s4.png" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="fengcai">
-                        <img src="./index25.png" />
+                        <img src="./s5.png" />
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="fengcai">
-                        <img src="./index26.png" />
+                        <img src="./s6.png" />
+                    </div>
+                </swiper-slide>
+                  <swiper-slide>
+                    <div class="fengcai">
+                        <img src="./s7.png" />
+                    </div>
+                </swiper-slide>
+                  <swiper-slide>
+                    <div class="fengcai">
+                        <img src="./s8.png" />
+                    </div>
+                </swiper-slide>
+                  <swiper-slide>
+                    <div class="fengcai">
+                        <img src="./s9.png" />
+                    </div>
+                </swiper-slide>
+                  <swiper-slide>
+                    <div class="fengcai">
+                        <img src="./s10.png" />
+                    </div>
+                </swiper-slide>
+                  <swiper-slide>
+                    <div class="fengcai">
+                        <img src="./s11.png" />
+                    </div>
+                </swiper-slide>
+                  <swiper-slide>
+                    <div class="fengcai">
+                        <img src="./s12.png" />
+                    </div>
+                </swiper-slide>
+                  <swiper-slide>
+                    <div class="fengcai">
+                        <img src="./s13.png" />
+                    </div>
+                </swiper-slide>
+                  <swiper-slide>
+                    <div class="fengcai">
+                        <img src="./s14.png" />
+                    </div>
+                </swiper-slide>
+                  <swiper-slide>
+                    <div class="fengcai">
+                        <img src="./s15.png" />
+                    </div>
+                </swiper-slide>
+                  <swiper-slide>
+                    <div class="fengcai">
+                        <img src="./s16.png" />
                     </div>
                 </swiper-slide>
             </swiper>
-            <div class="btn-next" v-if="swiper&&swiper.activeIndex<5" @click="next">NEXT</div>
+            <div class="btn-next" v-if="swiper&&swiper.activeIndex<15" @click="next">NEXT</div>
         </div>
         <MBottom />
     </div>
@@ -247,7 +297,7 @@ export default {
     methods: {
         next() {
             let index = this.swiper.activeIndex;
-            if (index < 5) {
+            if (index < 15) {
                 this.swiper.slideTo(index + 1, 1000, false);
             }
         }
